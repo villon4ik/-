@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Золота пропорція в архітектурі і дизайні</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+    }header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.618fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+.golden-box {
+  width: 100%;
+  aspect-ratio: 1 / 1.618;
+  background: linear-gradient(135deg, gold, orange);
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: gold;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#examples {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Золота пропорція</h1>
+  <p>В архітектурі та дизайні</p>
+</header><nav>
+  <a href="#about">Що це?</a>
+  <a href="#architecture">Архітектура</a>
+  <a href="#design">Дизайн</a>
+</nav><section class="container">
+  <div class="box" id="about">
+    <h2>Що таке золота пропорція?</h2>
+    <p>
+      Золота пропорція — це математичне співвідношення приблизно 1:1.618,
+      яке вважається естетично ідеальним.
+    </p>
+  </div>  <div class="box">
+    <div class="golden-box"></div>
+  </div>
+</section><section class="container" id="architecture">
+  <div class="box">
+    <h2>В архітектурі</h2>
+    <p>Натисни кнопку, щоб побачити приклади:</p>
+    <button onclick="showExamples()">Показати приклади</button>
+    <div id="examples"></div>
+  </div>  <div class="box">
+    <p>
+      Золота пропорція використовується для створення гармонії в будівлях.
+    </p>
+  </div>
+</section><section class="container" id="design">
+  <div class="box">
+    <h2>В дизайні</h2>
+    <p>
+      Використовується для композиції, балансу та естетики.
+    </p>
+  </div>  <div class="box">
+    <p>
+      Робить дизайн приємним для очей.
+    </p>
+  </div>
+</section><footer>
+  <p>© 2026 Золота пропорція</p>
+</footer><script>
+  function showExamples() {
+    const examples = document.getElementById("examples");
+
+    examples.innerHTML = `
+      <ul>
+        <li>Парфенон (Греція)</li>
+        <li>Велика піраміда в Гізі (Єгипет)</li>
+        <li>Собор Нотр-Дам (Франція)</li>
+        <li>Будівлі Ле Корбюзьє</li>
+      </ul>
+    `;
+  }
+</script></body>
+  </html>
